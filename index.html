@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Países</title>
+  <link rel="stylesheet" href="estilo.css" />
 </head>
 <body>
-    
+  <main class="wrap">
+    <h1>Paísesapp</h1>
+
+    <form id="form">
+      <label for="nombre">Nombre del país</label>
+      <div class="row">
+        <input type="text" id="nombre" placeholder="Ej. mexico, france, united" />
+        <button id="botonbuscar">Buscar</button>
+      </div>
+    </form>
+
+    <section class="panel">
+      <img id="imagen" alt="Bandera" />
+      <ul class="datos">
+        <li>Nombre común: <strong id="nombreComun">—</strong></li>
+        <li>Oficial: <strong id="nombreOficial">—</strong></li>
+        <li>Región: <strong id="region">—</strong></li>
+        <li>Subregión: <strong id="subregion">—</strong></li>
+        <li>Capital: <strong id="capital">—</strong></li>
+        <li>Población: <strong id="poblacion">—</strong></li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
 </body>
 </html>
